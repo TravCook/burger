@@ -1,10 +1,5 @@
-
-
-// 4. Create the `router` for the app, and export the `router` at the end of your file.
-
-
 var express = require("express");
-const cat = require("../../../inclass/inclassMVC/13-MVC/01-Activities/17-CatsApp/Unsolved/models/cat.js");
+const burger = require("../models/burger.js");
 var router = express.Router();
 
 var burger = require("../models/burger.js");

@@ -2,6 +2,7 @@
 var mysql = require("mysql");
 
 // Setting up our connection information
+
 var source = {
   localhost: {
     host: "localhost",
@@ -14,8 +15,12 @@ var source = {
 
 
 // Creating our connection
-var connection = mysql.createConnection(source.localhost);
 
+if(process.env.JAWSDB_URL){
+  var connection = mysql.createConnection(process.env.JAWSDB_URL)
+} else {
+var connection = mysql.createConnection(source.localhost);
+}
 
 // Connecting to the database.
 connection.connect(function(err) {
