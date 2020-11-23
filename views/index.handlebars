@@ -6,7 +6,15 @@
     <ul>
       {{#each burger}}
         {{#unless devoured}}
-          {{> burgers/burger-block devoured = true}}
+          <li>
+            <span>{{burger_name}}</span>
+            <button type="button" class="devour btn btn-success" data-id="{{id}}">
+              EAT ME
+            </button>
+            <button type="button" class="delete btn btn-danger" data-id="{{this.id}}">
+              DIGUSTANG
+            </button>
+          </li>>
         {{/unless}}
       {{/each}}
     </ul>
@@ -26,7 +34,9 @@
         <ul>
       {{#each burger}}
         {{#if devoured}}
-          {{> burgers/burger-block devoured = false}}
+            <button type="button" class="delete btn btn-danger" data-id="{{this.id}}">
+              DISGUSTANG
+            </button>
         {{/if}}
       {{/each}}
     </ul>
