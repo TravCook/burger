@@ -5,11 +5,11 @@ var mysql = require("mysql");
 
 var source = {
   localhost: {
-    host: "localhost",
-    port: 3306,
-    user: "root",
-    password: "password",
-    database: "burgers_db"
+    host: "vrk7xcrab1wsx4r1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    port: 	3306,
+    user: "	o85e8n5satcbwhbb",
+    password: "	u3u3ow9cimuufqzs",
+    database: "	nil65vv86efjn7xm"
   }
 };
 
